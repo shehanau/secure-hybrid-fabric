@@ -9,6 +9,6 @@
 
 ---
 ### 🛠️ Core Skills
-- **Security:** VPNs, Firewall Auditing, NIST Compliance.
+- **Security:** VPNs, Firewall Auditing, Compliance.
 - **Cloud:** VPC Architecture, Transit Gateways, Multi-region peering.
-- **Automation:** Python, Terraform, Ansible.
+- **Automation:** Terraform, Ansible.
