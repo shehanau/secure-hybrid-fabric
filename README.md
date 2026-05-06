@@ -27,6 +27,11 @@ A professional framework for managing enterprise-grade infrastructure. This "Fab
 *   **Identity:** Windows Server, Active Directory/Entra ID, and Virtualization (VMware/Hyper-V).
 *   **ITSM:** Change management and operations via ServiceNow and JIRA.
 
+#### 5. Operations & ICT Management (The "Ops" Pillar)
+*   **ITSM & Workflow:** Service delivery and change management via ServiceNow, JIRA, and LANDesk.
+*   **Monitoring:** Centralized visibility for IT and Industrial IoT (OT) environments.
+*   **Lifecycle:** Vendor management, asset tracking, and ITIL-aligned operations.
+
 ---
 
 ### 🚀 Strategic Vision
