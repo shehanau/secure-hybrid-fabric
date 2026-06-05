@@ -34,5 +34,10 @@ Reference network topologies and infrastructure designs.
 Operational standards, naming conventions, and best practices.
 
 ## Status
+---
 
-![Status](https://img.shields.io/badge/Status-Active-green)
+## Status
+
+![Status](https://img.shields.io/badge/Status-In_Progress-yellow)
+
+This section is actively being developed and updated with additional templates, reference architectures, and implementation examples.
