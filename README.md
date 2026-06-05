@@ -109,4 +109,4 @@ Operational processes and service delivery.
 
 This repository contains reference designs, sample templates, automation examples, and portfolio material. All customer-specific information has been removed.
 
-*Maintained by [Shehan](https://github.com/shehanau)*
+*Maintained by [Shehan Dondeenu](https://github.com/shehanau)*
