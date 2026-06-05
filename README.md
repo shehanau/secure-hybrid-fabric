@@ -1,54 +1,112 @@
-# 🌐 Secure Hybrid Fabric
-**ICT Manager | Senior Network Security Engineer | Infrastructure Architect**
+# Infrastructure & Operations Portfolio
 
-A professional framework for managing enterprise-grade infrastructure. This "Fabric" integrates carrier-grade networking, multi-cloud environments, and zero-trust security into a single, manageable ecosystem.
+![Network](https://img.shields.io/badge/Network-Architecture-blue)
+![Security](https://img.shields.io/badge/Security-Engineering-red)
+![Cloud](https://img.shields.io/badge/Cloud-Azure%20%7C%20AWS-00ADEF)
+![Endpoint](https://img.shields.io/badge/Endpoint-Management-green)
+![Operations](https://img.shields.io/badge/Operations-ITSM-orange)
 
----
-
-### 🏗️ Fabric Architecture
-
-#### 1. Network Underlay (Connectivity)
-*   **Routing & Switching:** Core BGP/MPLS configurations, VLAN segmentation, and Carrier connectivity management.
-*   **Vendors:** Cisco Catalyst/Nexus, Aruba CX, Ubiquiti Unifi.
-*   **Telephony:** PSTN to SIP migrations, Cloud VoIP (Tango, Teams Voice).
-
-#### 2. Security Overlay (Zero Trust)
-*   **Perimeter Security:** Fortinet (NSE) and Sophos XG firewall rule-sets and SD-WAN.
-*   **Access Control:** Network Access Control (NAC) and 802.1X implementation.
-*   **Principles:** Adopting Zero Trust Architecture (ZTA) and proactive security monitoring.
-
-#### 3. Cloud Extensions (Hybrid Environment)
-*   **Public Cloud:** Azure (IaaS/PaaS), AWS, and Alibaba Cloud (CEN) integrations.
-*   **Modern Workplace:** Microsoft 365 (Exchange, SharePoint, Teams), Entra ID (Azure AD).
-*   **Migrations:** End-to-end on-prem to cloud migration strategies.
-
-#### 4. Systems & Endpoint Management
-*   **Management:** Microsoft Intune/Endpoint Manager, JAMF (macOS), and LANDesk.
-*   **Identity:** Windows Server, Active Directory/Entra ID, and Virtualization (VMware/Hyper-V).
-*   **ITSM:** Change management and operations via ServiceNow and JIRA.
-
-#### 5. Operations & ICT Management (The "Ops" Pillar)
-*   **ITSM & Workflow:** Service delivery and change management via ServiceNow, JIRA, and LANDesk.
-*   **Monitoring:** Centralized visibility for IT and Industrial IoT (OT) environments.
-*   **Lifecycle:** Vendor management, asset tracking, and ITIL-aligned operations.
+A collection of reference architectures, templates, automation scripts, and operational playbooks covering modern enterprise infrastructure and cloud operations.
 
 ---
 
-### 🚀 Strategic Vision
-This repository demonstrates a transition from traditional hardware-centric management to **Infrastructure-as-Code (IaC)** and **Automated Operations**. 
+## 01 - Network Underlay
 
-- **Reliability:** Dual-carrier BGP failover and SD-WAN redundancy.
-- **Compliance:** ISO 27001 baseline security standards.
-- **Efficiency:** Centralized monitoring and automated reporting for Industrial IoT/OT environments.
+![BGP](https://img.shields.io/badge/BGP-Routing-blue)
+![VLAN](https://img.shields.io/badge/VLAN-Design-blue)
+![WiFi](https://img.shields.io/badge/Wireless-Heatmaps-blue)
+
+Core networking and connectivity standards.
+
+**Contents**
+
+* BGP templates
+* VLAN design standards
+* IP addressing schemes
+* Network topology diagrams
+* Wireless heatmap examples
+* Switching standards
 
 ---
 
-### 📂 Repository Roadmap
-*   `/01-network-underlay`: BGP templates, VLAN maps, and Wireless heatmaps.
-*   `/02-security-overlay`: Firewall policies (FortiOS/Sophos) and NAC protocols.
-*   `/03-cloud-extensions`: Terraform/ARM templates for Azure/AWS and M365 policies.
-*   `/04-endpoint-control`: Intune configuration profiles and AD hardening scripts.
-*   `/05-ops-management`: ServiceNow workflows and VoIP migration playbooks.
+##  02 - Security Overlay
+
+![FortiGate](https://img.shields.io/badge/FortiGate-Firewall-red)
+![Sophos](https://img.shields.io/badge/Sophos-Security-red)
+![NAC](https://img.shields.io/badge/NAC-Access_Control-red)
+
+Security architecture and access control.
+
+**Contents**
+
+* Firewall policy templates
+* FortiOS configurations
+* Sophos firewall examples
+* NAC deployment guides
+* Zero Trust references
+* Security baselines
 
 ---
+
+##  03 - Cloud Extensions
+
+![Azure](https://img.shields.io/badge/Azure-Cloud-0078D4)
+![AWS](https://img.shields.io/badge/AWS-Infrastructure-FF9900)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-844FBA)
+
+Cloud deployment and governance.
+
+**Contents**
+
+* Terraform templates
+* Azure landing zones
+* AWS reference deployments
+* ARM templates
+* Microsoft 365 security policies
+* Identity governance
+
+---
+
+##  04 - Endpoint Control
+
+![Intune](https://img.shields.io/badge/Intune-Management-green)
+![Windows](https://img.shields.io/badge/Windows-Hardening-green)
+![AD](https://img.shields.io/badge/Active_Directory-Security-green)
+
+Endpoint security and device management.
+
+**Contents**
+
+* Intune configuration profiles
+* Compliance policies
+* AD hardening scripts
+* Device deployment standards
+* Patch management procedures
+* Endpoint security baselines
+
+---
+
+##  05 - Operations Management
+
+![ServiceNow](https://img.shields.io/badge/ServiceNow-ITSM-orange)
+![VoIP](https://img.shields.io/badge/VoIP-Migration-orange)
+![Operations](https://img.shields.io/badge/Ops-Automation-orange)
+
+Operational processes and service delivery.
+
+**Contents**
+
+* ServiceNow workflows
+* Change management procedures
+* Incident response playbooks
+* VoIP migration runbooks
+* ITSM documentation
+* Operations automation
+
+---
+
+##  Disclaimer
+
+This repository contains reference designs, sample templates, automation examples, and portfolio material. All customer-specific information has been removed.
+
 *Maintained by [Shehan](https://github.com/shehanau)*
