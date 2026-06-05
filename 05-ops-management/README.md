@@ -37,7 +37,6 @@ System monitoring and alert management.
 Standard operating procedures and recovery guides.
 
 ---
-
 ## Status
 
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow)
