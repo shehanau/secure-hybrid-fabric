@@ -13,6 +13,11 @@ This section documents enterprise IP allocation standards, subnet planning metho
 
 ---
 
+## Enterprise Addressing Framework
+
+![Enterprise IP Addressing Framework](images/ip-addressing-framework.png)
+
+---
 ## Business Objectives
 
 - Standardised IP allocation
