@@ -19,40 +19,62 @@
 ![Entra\_ID](https://img.shields.io/badge/Entra_ID-Identity-0078D4)
 ![EDR](https://img.shields.io/badge/EDR-Protection-green)
 ![Avaya](https://img.shields.io/badge/Avaya-Unified_Communications-red)
-![Asana](https://img.shields.io/badge/Asana-Project_Management-F06A6A)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-844FBA)
 
 ---
 
-## Enterprise Infrastructure Architecture Portfolio
+# Enterprise Infrastructure Architecture Portfolio
 
-> Enterprise infrastructure portfolio focused on networking, cloud integration, security architecture, endpoint management, and operational governance. Built to demonstrate practical design patterns, implementation standards, migration methodologies, and operational frameworks used across modern enterprise environments.
+> Enterprise infrastructure portfolio focused on networking, security architecture, cloud integration, hybrid identity, endpoint management, automation, and operational governance.
 
-Secure Hybrid Fabric is a practical enterprise infrastructure portfolio showcasing modern networking, security, cloud integration, endpoint management, and operational governance.
+Secure Hybrid Fabric is a practical enterprise architecture portfolio demonstrating modern infrastructure design patterns, implementation standards, governance frameworks, migration methodologies, and operational practices commonly used across enterprise environments.
 
-The repository is structured around five architecture domains commonly found within enterprise environments and demonstrates real-world design principles, implementation methodologies, operational standards, and technology frameworks used across modern organisations.
+The repository is organised into architecture domains representing the core technology pillars found within modern organisations.
 
 ---
 
 ## Quick Navigation
 
-* [01 Network Underlay](#01---network-underlay-)
-* [02 Security Overlay](#02---security-overlay-)
-* [03 Cloud Extensions](#03---cloud-extensions-)
-* [04 Endpoint Control](#04---endpoint-control-)
-* [05 Operations Management](#05---operations-management-)
-* [Current Roadmap](#current-roadmap)
+| Domain                                                       | Description                                                                          | Status         |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------ | -------------- |
+| [01 - Network Underlay](./01-network-underlay)               | Routing, switching, wireless, IP addressing, standards, and connectivity             | 🚧 In Progress |
+| [02 - Security Overlay](./02-security-overlay)               | Zero Trust, firewalls, NAC, IAM, segmentation, and security controls                 | 🚧 In Progress |
+| [03 - Cloud Extensions](./03-cloud-extensions)               | Azure, Microsoft 365, Hybrid Identity, Virtualisation, Windows Server, and Terraform | 🚧 In Progress |
+| [04 - Endpoint Control](./04-endpoint-control)               | Intune, compliance, endpoint security, deployment, and lifecycle management          | 🚧 In Progress |
+| [05 - Operations Management](./05-ops-management)            | ITSM, monitoring, automation, governance, and operational excellence                 | 🚧 In Progress |
+| [06 - Enterprise Architecture](./06-enterprise-architecture) | Standards, roadmaps, governance, and strategic architecture frameworks               | 📋 Planned     |
 
 ---
 
-## Architecture Domains
+## Architecture Library
 
-| Domain                   | Focus Area                              | Status         |
-| ------------------------ | --------------------------------------- | -------------- |
-| 01 Network Underlay      | Routing, Switching, Wireless, SD-WAN    | 🚧 In Progress |
-| 02 Security Overlay      | Firewall, NAC, Segmentation, Zero Trust | 🚧 In Progress |
-| 03 Cloud Extensions      | Azure, Entra ID, Hybrid Cloud           | 🚧 In Progress |
-| 04 Endpoint Control      | Intune, EDR, Compliance, Hardening      | 🚧 In Progress |
-| 05 Operations Management | Monitoring, ITSM, Automation            | 🚧 In Progress |
+| Area           | Key Technologies                                        |
+| -------------- | ------------------------------------------------------- |
+| Networking     | BGP, OSPF, VLANs, SD-WAN, Wireless, DNS, DHCP           |
+| Security       | Fortinet, NAC, Zero Trust, Defender, Conditional Access |
+| Cloud          | Azure, Microsoft 365, Entra ID, Terraform               |
+| Infrastructure | Windows Server, Active Directory, VMware, Hyper-V       |
+| Endpoint       | Intune, Autopilot, Compliance Policies, Defender        |
+| Operations     | ITSM, Monitoring, Automation, VoIP, Governance          |
+
+---
+
+## Repository Structure
+
+```text
+secure-hybrid-fabric
+│
+├── 01-network-underlay
+├── 02-security-overlay
+├── 03-cloud-extensions
+├── 04-endpoint-control
+├── 05-ops-management
+├── 06-enterprise-architecture
+│
+├── LICENSE
+├── SECURITY.md
+└── README.md
+```
 
 ---
 
@@ -72,120 +94,104 @@ The repository is structured around five architecture domains commonly found wit
 
 ✔ Operational Governance
 
-✔ Service Continuity & Resilience
+✔ Business Continuity & Resilience
 
 ✔ Infrastructure Standardisation
 
 ✔ Technical Documentation & Runbooks
 
+✔ Infrastructure as Code
+
+✔ Cloud Governance & Automation
+
 ---
 
-## 01 - Network Underlay 🚧
-
-![BGP](https://img.shields.io/badge/BGP-Routing-blue)
-![VLAN](https://img.shields.io/badge/VLAN-Design-blue)
-![SDWAN](https://img.shields.io/badge/SD--WAN-Connectivity-blue)
-![Wireless](https://img.shields.io/badge/Wireless-Infrastructure-blue)
+## [01 - Network Underlay](./01-network-underlay) 🚧
 
 Core networking and connectivity standards supporting resilient enterprise infrastructure.
 
 ### Technologies
 
-Cisco • BGP • OSPF • VLAN • QoS • SD-WAN • Wireless LAN • VPN
+Cisco • BGP • OSPF • VLAN • QoS • SD-WAN • Wireless LAN • VPN • DNS • DHCP
 
 ### Contents
 
-* BGP design templates
-* VLAN architecture standards
-* Enterprise IP addressing schemes
+* BGP routing architectures
+* OSPF design patterns
+* VLAN segmentation standards
+* Enterprise IP addressing frameworks
 * Network topology documentation
-* Wireless heatmap examples
+* Wireless architecture and heatmaps
 * Routing and switching standards
 * WAN and branch connectivity designs
 
 ---
 
-## 02 - Security Overlay 🚧
-
-![Fortinet](https://img.shields.io/badge/Fortinet-Firewall-red)
-![NAC](https://img.shields.io/badge/NAC-Access_Control-red)
-![ZeroTrust](https://img.shields.io/badge/Zero_Trust-Security-red)
-![EDR](https://img.shields.io/badge/EDR-Protection-red)
+## [02 - Security Overlay](./02-security-overlay) 🚧
 
 Security architecture and access control frameworks protecting enterprise systems and services.
 
 ### Technologies
 
-Fortinet • NAC • IPS • ACL • MFA • Conditional Access • EDR • Segmentation
+Fortinet • NAC • IPS • ACL • MFA • Conditional Access • EDR • Zero Trust
 
 ### Contents
 
 * Firewall policy standards
 * Security segmentation models
-* NAC deployment guides
-* Zero Trust reference architectures
+* NAC deployment frameworks
+* Zero Trust architecture
+* Identity and access controls
 * Security hardening baselines
-* Identity and access control frameworks
 * Incident response references
+* Security governance standards
 
 ---
 
-## 03 - Cloud Extensions 🚧
+## [03 - Cloud Extensions](./03-cloud-extensions) 🚧
 
-![Azure](https://img.shields.io/badge/Azure-Hybrid_Cloud-0078D4)
-![Entra](https://img.shields.io/badge/Entra_ID-Identity-0078D4)
-![Microsoft365](https://img.shields.io/badge/Microsoft_365-Productivity-0078D4)
-![Terraform](https://img.shields.io/badge/Terraform-Automation-844FBA)
-
-Hybrid cloud architectures integrating enterprise infrastructure with Microsoft cloud services.
+Hybrid cloud architectures integrating enterprise infrastructure with Microsoft cloud platforms.
 
 ### Technologies
 
-Microsoft Azure • Entra ID • Microsoft 365 • Terraform • ARM Templates
+Microsoft Azure • Microsoft Entra ID • Microsoft 365 • Terraform • VMware • Hyper-V • Windows Server • Hybrid Identity
 
 ### Contents
 
+* Azure architecture and governance
 * Azure landing zones
-* Hybrid cloud connectivity
-* Microsoft 365 security policies
-* Identity governance standards
-* Infrastructure as Code examples
+* Windows Server infrastructure
+* VMware and Hyper-V platforms
+* Hybrid identity frameworks
+* Microsoft 365 architecture
+* Terraform deployment examples
+* Infrastructure as Code
 * Cloud migration frameworks
 * Governance and compliance controls
 
 ---
 
-## 04 - Endpoint Control 🚧
-
-![Intune](https://img.shields.io/badge/Intune-Management-green)
-![Windows](https://img.shields.io/badge/Windows-Hardening-green)
-![AD](https://img.shields.io/badge/Active_Directory-Identity-green)
-![Defender](https://img.shields.io/badge/Microsoft_Defender-Protection-green)
+## [04 - Endpoint Control](./04-endpoint-control) 🚧
 
 Endpoint security and device lifecycle management standards.
 
 ### Technologies
 
-Intune • Active Directory • Windows Server • Microsoft Defender • Compliance Policies
+Microsoft Intune • Windows • Defender • Active Directory • Compliance Policies
 
 ### Contents
 
 * Intune configuration profiles
 * Compliance frameworks
 * Device deployment standards
+* Endpoint security baselines
 * Active Directory hardening
 * Patch management procedures
-* Endpoint security baselines
 * Device lifecycle governance
 
 ---
 
-## 05 - Operations Management 🚧
-
-![ITSM](https://img.shields.io/badge/ITSM-Service_Management-orange)
-![VoIP](https://img.shields.io/badge/VoIP-Migrations-orange)
-![Monitoring](https://img.shields.io/badge/Monitoring-Observability-orange)
-![Automation](https://img.shields.io/badge/Automation-Operations-orange)
+## [05 - Operations Management](./05-ops-management) 🚧
 
 Operational governance, service management, monitoring, and automation practices.
 
@@ -207,38 +213,57 @@ ITSM • Asana • Monitoring Platforms • VoIP • Automation • Service Deli
 
 ## Current Roadmap
 
-* [ ] Network Underlay Reference Architecture
+* [x] Network Underlay Framework
+* [x] Cloud Extensions Framework
+* [x] Windows Server Framework
+* [x] Virtualisation Framework
+* [x] Hybrid Identity Framework
+* [x] Microsoft 365 Framework
+* [x] Terraform Framework
 * [ ] Security Overlay Framework
-* [ ] Hybrid Cloud Extension Designs
-* [ ] Endpoint Control Standards
+* [ ] Endpoint Control Framework
 * [ ] Operations Governance Framework
-* [ ] Monitoring & Observability
-* [ ] Automation & Orchestration
-* [ ] Disaster Recovery Framework
+* [ ] Enterprise Architecture Framework
 
 ---
 
-## Repository Structure
+## Portfolio Metrics
 
-```text
-secure-hybrid-fabric
-│
-├── 01-network-underlay
-├── 02-security-overlay
-├── 03-cloud-extensions
-├── 04-endpoint-control
-├── 05-ops-management
-│
-├── LICENSE
-├── SECURITY.md
-└── README.md
-```
+| Category                | Coverage |
+| ----------------------- | -------- |
+| Network Architecture    | ✅        |
+| Security Architecture   | 🚧       |
+| Cloud Architecture      | ✅        |
+| Endpoint Management     | 🚧       |
+| Operations Management   | 🚧       |
+| Enterprise Standards    | 🚧       |
+| Infrastructure as Code  | ✅        |
+| Reference Architectures | Growing  |
+| Technical Documentation | Growing  |
+
+### Current Technology Coverage
+
+* Cisco
+* Fortinet
+* Microsoft Azure
+* Microsoft 365
+* Microsoft Entra ID
+* Windows Server
+* Active Directory
+* VMware
+* Hyper-V
+* Terraform
+* Intune
+* Defender
+* SD-WAN
+* Wireless
+* VoIP
 
 ---
 
 ## Disclaimer
 
-This repository contains reference architectures, implementation examples, operational frameworks, technical standards, and portfolio material intended for educational and professional demonstration purposes.
+This repository contains reference architectures, implementation examples, operational frameworks, technical standards, governance models, and portfolio material intended for educational and professional demonstration purposes.
 
 All customer-specific information, credentials, configurations, and proprietary content have been removed.
 
