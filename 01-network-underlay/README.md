@@ -7,26 +7,30 @@
 ![VLAN](https://img.shields.io/badge/VLAN-Segmentation-blue)
 ![SDWAN](https://img.shields.io/badge/SD--WAN-Connectivity-blue)
 ![Wireless](https://img.shields.io/badge/Wireless-Enterprise-blue)
+![DNS](https://img.shields.io/badge/DNS-Core_Services-green)
+![DHCP](https://img.shields.io/badge/DHCP-IP_Management-green)
+![RADIUS](https://img.shields.io/badge/RADIUS-Authentication-green)
 
 ## Overview
 
-The Network Underlay provides the foundational connectivity layer supporting enterprise infrastructure, cloud integration, security services, and endpoint communications.
+The Network Underlay provides the foundational connectivity layer supporting enterprise infrastructure, cloud integration, security services, identity platforms, endpoint communications, and operational services.
 
-This section contains reference architectures, design standards, implementation guidance, and operational practices used to build scalable, resilient, and secure network environments.
+This section contains enterprise reference architectures, design standards, implementation guidance, operational frameworks, and infrastructure best practices used to build scalable, resilient, secure, and highly available network environments.
 
-The objective is to establish a consistent network framework that supports business growth, operational reliability, and future technology adoption.
+The objective is to establish a standardised networking framework that supports business growth, operational reliability, cloud adoption, security integration, and future technology modernisation.
 
 ---
+
 ## Quick Navigation
 
-| Domain                              | Description                                                                              |
-| ----------------------------------- | ---------------------------------------------------------------------------------------- |
-| [BGP Routing](./bgp)                | Enterprise routing architectures, ISP redundancy, Azure ExpressRoute, SD-WAN integration |
-| [VLAN Design](./vlan-design)        | Network segmentation, security zoning, enterprise switching standards                    |
-| [Wireless](./wireless)              | Enterprise wireless architecture, roaming, capacity planning                             |
-| [IP Addressing](./ip-addressing)    | Enterprise addressing frameworks, subnet allocation, summarisation                       |
-| [Network Standards](./standards)    | Naming conventions, configuration standards, governance                                  |
-| [Architecture Diagrams](./diagrams) | Reference architectures and enterprise design patterns                                   |
+| Domain                              | Description                                                                          |
+| ----------------------------------- | ------------------------------------------------------------------------------------ |
+| [BGP Routing](./bgp)                | Enterprise routing architectures, ISP redundancy, Azure ExpressRoute, route policies |
+| [VLAN Design](./vlan-design)        | Enterprise segmentation, security zoning, switching standards                        |
+| [Wireless](./wireless)              | Enterprise wireless architecture, Entra ID authentication, NAC integration           |
+| [IP Addressing](./ip-addressing)    | Enterprise IP planning, subnet allocation, route summarisation                       |
+| [Network Standards](./standards)    | Governance, ITIL, operational standards, change management                           |
+| [Architecture Diagrams](./diagrams) | Enterprise architecture patterns and reference designs                               |
 
 ---
 
@@ -38,102 +42,193 @@ The objective is to establish a consistent network framework that supports busin
 
 ## Architecture Scope
 
-The Network Underlay focuses on the core network services required to support enterprise operations:
+The Network Underlay focuses on the core services required to support enterprise technology environments.
+
+### Network Infrastructure
 
 * Routing Architecture
 * Switching Infrastructure
 * VLAN Segmentation
 * Enterprise Wireless
 * WAN & SD-WAN Connectivity
-* IP Address Management
 * High Availability Design
-* Network Standards & Governance
+
+### Core Infrastructure Services
+
+* DNS
+* DHCP
+* NTP
+* RADIUS
+* SNMP
+* Syslog
+* NetFlow & Telemetry
+
+### Identity Integration
+
+* Microsoft Entra ID
+* Conditional Access
+* Network Access Control (NAC)
+* Multi-Factor Authentication
+* Device Compliance
+
+### Operations & Governance
+
+* Monitoring & Observability
+* ITIL Service Management
+* Change Management
+* Configuration Standards
+* Documentation Standards
 
 ---
 
 ## Technology Domains
 
-### BGP Routing
+### BGP & Enterprise Routing
 
-Enterprise routing architectures, route advertisements, path selection, failover design, and external connectivity standards.
+Enterprise routing architectures supporting WAN connectivity, route optimisation, cloud integration, and ISP redundancy.
 
-**Deliverables**
+#### Technologies
 
-* BGP design templates
-* Routing policies
-* Redundancy models
-* Route filtering standards
-* ISP integration examples
+* BGP
+* OSPF
+* Route Summarisation
+* Policy-Based Routing
+* Azure ExpressRoute
+* SD-WAN
 
----
+#### Deliverables
 
-### VLAN Architecture
-
-Logical network segmentation and traffic isolation strategies supporting enterprise security and operational requirements.
-
-**Deliverables**
-
-* VLAN standards
-* Naming conventions
-* Segmentation models
-* Security zoning
-* Layer 2 design guidance
+* BGP Design Templates
+* Routing Standards
+* Route Filtering Policies
+* ISP Integration Models
+* Routing Validation Procedures
 
 ---
 
-### Wireless Infrastructure
+### VLAN Architecture & Segmentation
 
-Enterprise wireless design principles supporting mobility, performance, and secure access.
+Logical network segmentation supporting security, performance, and operational consistency.
 
-**Deliverables**
+#### Technologies
 
-* Wireless deployment standards
-* Heatmap examples
-* SSID design
-* Roaming considerations
-* Capacity planning guidance
+* VLANs
+* Layer 2 Switching
+* ACLs
+* Security Zones
+* Inter-VLAN Routing
 
----
+#### Deliverables
 
-### IP Address Management
-
-Structured IP allocation and addressing strategies supporting long-term scalability.
-
-**Deliverables**
-
-* Addressing frameworks
-* Subnet allocation standards
-* Branch site addressing
-* Data centre addressing
-* Documentation standards
+* VLAN Standards
+* Naming Conventions
+* Segmentation Models
+* Security Zoning Frameworks
+* Enterprise Switching Standards
 
 ---
 
-### Network Topology
+### Enterprise Wireless
 
-Reference architectures and logical design patterns.
+Modern wireless architectures supporting secure mobility, identity-driven access control, and enterprise-scale deployments.
 
-**Deliverables**
+#### Technologies
 
-* Campus network designs
-* Branch office architectures
-* WAN topologies
-* Hybrid cloud connectivity diagrams
-* SD-WAN reference models
+* Wi-Fi 6
+* Wi-Fi 6E
+* Wi-Fi 7
+* RADIUS
+* 802.1X
+* Microsoft Entra ID
+* NAC
+* WPA3 Enterprise
+
+#### Deliverables
+
+* Wireless Reference Architectures
+* SSID Standards
+* Authentication Frameworks
+* RF Planning Standards
+* Capacity Planning Guidance
 
 ---
 
-### Network Standards
+### IP Address Management (IPAM)
 
-Operational consistency and governance across network infrastructure.
+Structured IP allocation and addressing frameworks supporting scalable enterprise deployments.
 
-**Deliverables**
+#### Technologies
 
-* Device naming conventions
-* Documentation standards
-* Configuration baselines
-* Change management references
-* Operational procedures
+* IPv4
+* DHCP
+* DNS
+* Route Summarisation
+* IP Planning
+
+#### Deliverables
+
+* Addressing Frameworks
+* Subnet Standards
+* Branch Office Models
+* Cloud Addressing Models
+* IP Governance Standards
+
+---
+
+### Core Infrastructure Services
+
+Foundational services supporting enterprise operations and network functionality.
+
+#### Services
+
+* DNS
+* DHCP
+* NTP
+* RADIUS
+* SNMP
+* Syslog
+* NetFlow
+* Telemetry
+
+#### Deliverables
+
+* Service Standards
+* Availability Models
+* Monitoring Standards
+* Operational Procedures
+* Validation Frameworks
+
+---
+
+### Network Topology & Architecture
+
+Enterprise reference architectures and infrastructure design patterns.
+
+#### Deliverables
+
+* Campus Network Designs
+* Branch Office Architectures
+* WAN Topologies
+* Hybrid Cloud Architectures
+* Azure Connectivity Models
+* SD-WAN Reference Designs
+
+---
+
+### Standards & Governance
+
+Enterprise standards supporting operational consistency, security, compliance, and lifecycle management.
+
+#### Areas Covered
+
+* Infrastructure Standards
+* Security Baselines
+* Cloud Governance
+* Change Management
+* ITIL Service Management
+* Monitoring & Observability
+* Business Continuity
+* Automation Standards
 
 ---
 
@@ -141,36 +236,46 @@ Operational consistency and governance across network infrastructure.
 
 ### Scalability
 
-Design infrastructure capable of supporting future growth without major architectural changes.
+Support future growth without requiring major architectural redesign.
 
 ### Resilience
 
-Minimise service disruption through redundancy, high availability, and fault-tolerant design.
+Minimise service disruption through redundancy, failover, and high availability.
 
 ### Security
 
-Apply segmentation, access control, and least-privilege principles throughout the network.
+Apply Zero Trust, segmentation, authentication, and least privilege principles.
 
-### Simplicity
+### Standardisation
 
-Maintain consistent standards and operational processes to reduce complexity.
+Maintain consistent deployment standards and operational practices.
 
 ### Observability
 
-Enable effective monitoring, alerting, and troubleshooting through standardised visibility practices.
+Provide complete visibility through monitoring, logging, analytics, and reporting.
+
+### Automation
+
+Reduce operational complexity through Infrastructure as Code and automation practices.
+
+### Cloud Integration
+
+Enable seamless integration with cloud services and hybrid environments.
 
 ---
 
 ## Current Roadmap
 
 * [ ] Enterprise Network Reference Architecture
-* [ ] BGP Design Framework
+* [ ] BGP & OSPF Design Framework
 * [ ] VLAN Segmentation Standards
 * [ ] Wireless Design Guide
+* [ ] DNS & DHCP Standards
+* [ ] Core Services Framework
 * [ ] SD-WAN Architecture
-* [ ] IP Addressing Framework
 * [ ] Network Operations Runbooks
 * [ ] Validation & Testing Procedures
+* [ ] Monitoring & Observability Framework
 
 ---
 
@@ -183,8 +288,9 @@ Enable effective monitoring, alerting, and troubleshooting through standardised 
 ├── vlan-design
 ├── wireless
 ├── ip-addressing
-├── diagrams
 ├── standards
+├── diagrams
+│
 └── README.md
 ```
 
@@ -194,4 +300,4 @@ Enable effective monitoring, alerting, and troubleshooting through standardised 
 
 🚧 Active Development
 
-This section is continuously updated with architecture patterns, implementation guidance, operational standards, and enterprise networking reference material.
+This section is continuously expanded with enterprise architecture patterns, operational frameworks, governance standards, implementation guidance, cloud connectivity models, and modern networking reference designs.
