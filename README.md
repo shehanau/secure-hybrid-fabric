@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/banner.png" alt="Secure Hybrid Fabric Banner">
+</p>
+
 # Secure Hybrid Fabric
 
 ![Status](https://img.shields.io/badge/Status-Active_Development-orange)
@@ -12,7 +16,7 @@
 ![Microsoft](https://img.shields.io/badge/Microsoft-Cloud-5E5E5E)
 ![Fortinet](https://img.shields.io/badge/Fortinet-Security-EE3124)
 ![Intune](https://img.shields.io/badge/Intune-Endpoint_Management-0078D4)
-![Entra ID](https://img.shields.io/badge/Entra_ID-Identity-0078D4)
+![Entra\_ID](https://img.shields.io/badge/Entra_ID-Identity-0078D4)
 ![EDR](https://img.shields.io/badge/EDR-Protection-green)
 ![Avaya](https://img.shields.io/badge/Avaya-Unified_Communications-red)
 ![Asana](https://img.shields.io/badge/Asana-Project_Management-F06A6A)
@@ -21,9 +25,22 @@
 
 ## Enterprise Infrastructure Architecture Portfolio
 
+> Enterprise infrastructure portfolio focused on networking, cloud integration, security architecture, endpoint management, and operational governance. Built to demonstrate practical design patterns, implementation standards, migration methodologies, and operational frameworks used across modern enterprise environments.
+
 Secure Hybrid Fabric is a practical enterprise infrastructure portfolio showcasing modern networking, security, cloud integration, endpoint management, and operational governance.
 
 The repository is structured around five architecture domains commonly found within enterprise environments and demonstrates real-world design principles, implementation methodologies, operational standards, and technology frameworks used across modern organisations.
+
+---
+
+## Quick Navigation
+
+* [01 Network Underlay](#01---network-underlay-)
+* [02 Security Overlay](#02---security-overlay-)
+* [03 Cloud Extensions](#03---cloud-extensions-)
+* [04 Endpoint Control](#04---endpoint-control-)
+* [05 Operations Management](#05---operations-management-)
+* [Current Roadmap](#current-roadmap)
 
 ---
 
