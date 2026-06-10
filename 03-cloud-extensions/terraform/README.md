@@ -20,6 +20,60 @@ This section contains reference architectures, deployment examples, reusable mod
 The objective is to reduce manual deployment effort, improve standardisation, increase reliability, and support scalable cloud adoption.
 
 ---
+## Quick Navigation
+
+| Module                                     | Description                                                                               |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| [Azure Virtual Network](./azure-vnet)      | Terraform deployment of Azure VNets, subnets, NSGs, route tables, and hybrid connectivity |
+| [Azure Virtual Machine](./azure-vm)        | Terraform deployment of Windows and Linux virtual machines                                |
+| [Azure Landing Zone](./azure-landing-zone) | Enterprise governance, subscriptions, policies, and Azure foundations                     |
+| [Reusable Modules](./modules)              | Standardised Terraform modules for enterprise deployments                                 |
+
+---
+
+## Reference Architectures
+
+| Architecture                      | Description                                        |
+| --------------------------------- | -------------------------------------------------- |
+| Terraform Reference Architecture  | End-to-end Infrastructure as Code deployment model |
+| Azure VNet Reference Architecture | Enterprise Azure networking deployment             |
+| Azure VM Reference Architecture   | Azure compute deployment pattern                   |
+| Azure Landing Zone Architecture   | Governance and cloud foundation design             |
+
+---
+
+## Technology Coverage
+
+### Infrastructure as Code
+
+* Terraform
+* HCL
+* State Management
+* Remote Backend
+
+### Azure Services
+
+* Resource Groups
+* Virtual Networks
+* Virtual Machines
+* Storage Accounts
+* Azure Monitor
+* Key Vault
+
+### Governance
+
+* Azure Policy
+* Resource Tagging
+* RBAC
+* Management Groups
+
+### Automation
+
+* GitHub Actions
+* Azure DevOps
+* PowerShell
+* CI/CD Pipelines
+
 
 ## Reference Architecture
 
