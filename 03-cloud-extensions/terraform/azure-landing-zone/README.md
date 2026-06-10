@@ -23,7 +23,7 @@ This section contains enterprise reference architectures, governance frameworks,
 
 ## Reference Architecture
 
-![Azure Landing Zone Architecture](images/azure-landing-zone-reference-architecture.png)
+![Azure Landing Zone Architecture](../images/azure-landing-zone-reference-architecture.png)
 
 ---
 
