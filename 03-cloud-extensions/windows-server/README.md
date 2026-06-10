@@ -6,19 +6,20 @@
 ![DNS](https://img.shields.io/badge/DNS-Name_Resolution-green)
 ![DHCP](https://img.shields.io/badge/DHCP-IP_Management-green)
 ![PKI](https://img.shields.io/badge/PKI-Certificate_Services-orange)
+![NPS](https://img.shields.io/badge/NPS-RADIUS_Authentication-purple)
 ![Entra ID](https://img.shields.io/badge/Entra_ID-Hybrid_Identity-0078D4)
 
-### Enterprise Identity • Infrastructure Services • Hybrid Cloud Integration
+### Enterprise Identity • Infrastructure Services • Authentication • Hybrid Cloud
 
 ---
 
 ## Overview
 
-Windows Server provides the core infrastructure services that underpin enterprise identity, authentication, networking, endpoint management, and application delivery.
+Windows Server remains the foundation of many enterprise environments, providing identity services, authentication, networking, policy management, certificate services, application hosting, and hybrid cloud integration.
 
-This section contains reference architectures, operational standards, deployment guidance, governance frameworks, and best practices used to design, implement, secure, and maintain enterprise Windows Server environments.
+This section contains enterprise reference architectures, operational standards, governance frameworks, deployment guidance, and best practices used to design, secure, and manage modern Windows Server environments.
 
-The objective is to establish secure, resilient, scalable, and cloud-integrated server infrastructure capable of supporting modern business operations.
+The objective is to establish secure, resilient, scalable, and cloud-integrated infrastructure services supporting enterprise operations.
 
 ---
 
@@ -30,128 +31,194 @@ The objective is to establish secure, resilient, scalable, and cloud-integrated 
 
 ## Quick Navigation
 
-| Domain           | Description                                     |
-| ---------------- | ----------------------------------------------- |
-| Active Directory | Enterprise identity and authentication services |
-| DNS              | Internal and external name resolution           |
-| DHCP             | Automated IP address allocation                 |
-| PKI              | Certificate services and encryption             |
-| Group Policy     | Centralised configuration management            |
-| File Services    | Enterprise file storage and access              |
-| Hybrid Identity  | Entra ID integration and synchronisation        |
-| Operations       | Monitoring, backup, recovery, and maintenance   |
+| Domain           | Description                                   |
+| ---------------- | --------------------------------------------- |
+| Active Directory | Enterprise identity and authentication        |
+| DNS              | Name resolution and service discovery         |
+| DHCP             | IP address management                         |
+| PKI              | Certificate services and encryption           |
+| NPS / RADIUS     | Network authentication services               |
+| Group Policy     | Configuration and security management         |
+| File Services    | Enterprise storage and collaboration          |
+| Hybrid Identity  | Entra ID integration and synchronisation      |
+| Operations       | Monitoring, backup, recovery, and maintenance |
 
 ---
 
-## Core Infrastructure Services
+# Core Infrastructure Services
 
-### Active Directory Domain Services
+## Active Directory Domain Services (AD DS)
 
 Provides centralised authentication, authorisation, identity management, and policy enforcement.
 
-#### Capabilities
+### Functions
 
 * User Authentication
 * Computer Authentication
 * Organisational Units (OU)
-* Group Policy
-* Trust Relationships
 * Security Groups
+* Group Policy
 * Delegated Administration
+* Trust Relationships
+
+### Design Principles
+
+* Redundant Domain Controllers
+* Multi-Site Replication
+* Secure Administrative Boundaries
+* Least Privilege Access
 
 ---
 
-### DNS
+## Domain Controllers
 
-Enterprise name resolution services supporting internal applications, Active Directory, cloud services, and infrastructure platforms.
+Domain Controllers provide authentication and directory services across the enterprise.
 
-#### Functions
+### Best Practices
+
+* Minimum Two Domain Controllers
+* Geographic Redundancy
+* Secure Administrative Access
+* Backup & Recovery Validation
+* Replication Monitoring
+
+---
+
+## DNS
+
+Enterprise name resolution supporting applications, users, cloud services, and infrastructure platforms.
+
+### Functions
 
 * Internal DNS Zones
+* Forwarders
 * Conditional Forwarding
-* DNS Forwarders
 * Active Directory Integration
 * Service Discovery
 
+### Operational Considerations
+
+* DNS Redundancy
+* Zone Replication
+* Monitoring
+* Disaster Recovery
+
 ---
 
-### DHCP
+## DHCP
 
-Automated IP address management and endpoint network configuration.
+Automated endpoint network configuration and IP address allocation.
 
-#### Functions
+### Functions
 
-* IP Address Allocation
 * Scope Management
+* Address Allocation
 * Reservations
-* Lease Management
 * DHCP Failover
+* Lease Management
+
+### Benefits
+
+* Simplified Administration
+* Consistent Configuration
+* Reduced Operational Risk
 
 ---
 
-### Public Key Infrastructure (PKI)
+## Active Directory Certificate Services (AD CS)
 
-Provides certificate-based authentication, encryption, and secure communications.
+Provides enterprise certificate lifecycle management.
 
-#### Common Use Cases
+### Common Use Cases
 
 * Wireless Authentication
 * VPN Authentication
 * Device Certificates
-* Server Certificates
-* Web Applications
+* Web Server Certificates
+* Smart Card Authentication
 * Code Signing
+
+### Benefits
+
+* Strong Authentication
+* Secure Communications
+* Certificate-Based Trust
 
 ---
 
-## Identity & Access Management
+## Network Policy Server (NPS)
 
-### Active Directory
+Provides RADIUS authentication and authorisation services.
 
-The primary identity platform for enterprise authentication and access control.
+### Common Integrations
 
-#### Components
+* Enterprise Wireless
+* VPN Platforms
+* Network Access Control (NAC)
+* 802.1X Authentication
+* Microsoft Entra ID
 
-* Domain Controllers
+### Benefits
+
+* Centralised Authentication
+* Dynamic Policy Enforcement
+* Security Auditing
+
+---
+
+# Identity & Access Management
+
+## Active Directory
+
+The primary enterprise identity platform.
+
+### Components
+
 * Forests
 * Domains
 * Sites & Services
 * Trust Relationships
+* Global Catalog
 
 ---
 
-### Microsoft Entra ID
+## Microsoft Entra ID
 
-Hybrid identity integration extending Active Directory into Microsoft cloud services.
+Extends identity services into Microsoft cloud platforms.
 
-#### Features
+### Features
 
-* Identity Synchronisation
-* Password Hash Sync
-* Seamless SSO
+* Single Sign-On (SSO)
 * Conditional Access
 * Multi-Factor Authentication
+* Identity Governance
 * Self-Service Password Reset
 
 ---
 
-### Hybrid Identity
+## Hybrid Identity
 
-Supports unified identity management across on-premises and cloud environments.
+Unified identity management across on-premises and cloud services.
 
-#### Technologies
+### Technologies
 
-* Entra Connect
-* Entra ID
-* Active Directory
-* Conditional Access
+* Microsoft Entra Connect
+* Password Hash Synchronisation
+* Seamless SSO
 * Hybrid Join
+* Device Registration
+
+### Benefits
+
+* Simplified User Experience
+* Improved Security
+* Cloud Readiness
 
 ---
 
-## Group Policy Management
+# Group Policy Management
 
-Group Policy provides centralised management of user and computer settings.
+Centralised configuration and security management.
 
 ### Common Policies
 
@@ -162,11 +229,18 @@ Group Policy provides centralised management of user and computer settings.
 * Software Deployment
 * Administrative Controls
 
+### Objectives
+
+* Standardisation
+* Security
+* Compliance
+* Operational Efficiency
+
 ---
 
-## File & Storage Services
+# File & Storage Services
 
-Enterprise file services supporting secure access and collaboration.
+Enterprise file services supporting secure collaboration and data access.
 
 ### Technologies
 
@@ -178,30 +252,30 @@ Enterprise file services supporting secure access and collaboration.
 
 ### Objectives
 
-* Secure Access
 * High Availability
+* Secure Access
 * Data Protection
 * Simplified Management
 
 ---
 
-## Security Controls
+# Security Controls
 
-### Identity Security
+## Identity Security
 
 * Least Privilege Access
 * Role-Based Access Control
-* Administrative Separation
 * Tiered Administration
+* Privileged Access Management
 
-### Server Security
+## Server Hardening
 
+* CIS Benchmarks
 * Security Baselines
-* Patch Management
 * Service Hardening
-* Secure Administrative Access
+* Patch Management
 
-### Endpoint Security Integration
+## Endpoint Integration
 
 * Microsoft Defender
 * Device Compliance
@@ -210,87 +284,122 @@ Enterprise file services supporting secure access and collaboration.
 
 ---
 
-## Monitoring & Operations
+# Privileged Access Management
 
-### Monitoring Areas
+Modern enterprise environments require dedicated administrative security controls.
+
+### Controls
+
+* Microsoft LAPS
+* Tiered Administration
+* Break Glass Accounts
+* Privileged Workstations
+* Just-In-Time Access
+* Administrative Separation
+
+---
+
+# Monitoring & Operations
+
+## Monitoring Areas
 
 * Domain Controller Health
 * DNS Availability
 * DHCP Services
 * Replication Status
 * Authentication Events
-* Certificate Expiry
+* Certificate Expiry Monitoring
 
 ### Operational Activities
 
 * Patch Management
 * Backup Validation
-* Capacity Planning
 * Security Auditing
+* Capacity Planning
 * Disaster Recovery Testing
 
 ---
 
-## High Availability
+# Backup & Recovery
 
-### Active Directory
+Business continuity depends on reliable recovery processes.
+
+### Technologies
+
+* Windows Server Backup
+* Azure Backup
+* Veeam
+* Recovery Services Vault
+
+### Objectives
+
+* Data Protection
+* Business Continuity
+* Recovery Validation
+* Compliance
+
+---
+
+# High Availability
+
+## Active Directory
 
 * Multiple Domain Controllers
 * Multi-Site Replication
 * Redundant DNS
 
-### DHCP
+## DHCP
 
 * DHCP Failover
 * Scope Replication
 
-### File Services
+## File Services
 
 * DFS Replication
 * Storage Redundancy
 
 ---
 
-## Cloud Integration
+# Cloud Integration
 
-### Microsoft Azure
+## Microsoft Azure
 
 * Azure Virtual Machines
 * Azure Backup
 * Azure Site Recovery
-* Azure Monitor
 * Azure Arc
+* Azure Monitor
 
-### Hybrid Services
+## Hybrid Services
 
 * Entra ID Synchronisation
-* Hybrid Join
 * Conditional Access
-* Cloud Identity Governance
+* MFA Enforcement
+* Device Registration
 
 ---
 
-## Design Principles
+# Design Principles
 
 ### Security First
 
-Implement identity-first security controls and least privilege access.
+Implement identity-centric security controls.
 
 ### Resilience
 
-Design for high availability and business continuity.
+Eliminate single points of failure.
 
 ### Standardisation
 
-Maintain consistent deployment and operational standards.
+Maintain consistent deployment standards.
 
 ### Scalability
 
-Support organisational growth without major redesign.
+Support future business growth.
 
 ### Cloud Readiness
 
-Enable seamless integration with cloud services.
+Enable seamless hybrid cloud integration.
 
 ### Automation
 
@@ -298,21 +407,22 @@ Reduce manual effort through scripting and automation.
 
 ---
 
-## Validation Checklist
+# Validation Checklist
 
 * [ ] Domain Controllers deployed
 * [ ] DNS validated
 * [ ] DHCP operational
 * [ ] PKI functioning
-* [ ] Group Policies tested
-* [ ] Entra ID synchronisation validated
+* [ ] NPS authentication tested
+* [ ] Group Policies validated
+* [ ] Entra ID synchronisation operational
 * [ ] Monitoring enabled
 * [ ] Backup testing completed
 * [ ] Disaster recovery documented
 
 ---
 
-## Future Enhancements
+# Future Enhancements
 
 * Windows LAPS
 * Defender for Identity
@@ -321,17 +431,7 @@ Reduce manual effort through scripting and automation.
 * Certificate Lifecycle Automation
 * Infrastructure as Code
 * Automated Server Provisioning
-
----
-
-## Related Architecture Areas
-
-* Enterprise Networking
-* Hybrid Identity
-* Endpoint Management
-* Security Architecture
-* Cloud Extensions
-* Operations Management
+* Passwordless Authentication
 
 ---
 
@@ -339,5 +439,4 @@ Reduce manual effort through scripting and automation.
 
 🚧 Active Development
 
-This section is being expanded with enterprise Windows Server architectures, Active Directory frameworks, hybrid identity integrations, PKI implementations, operational standards, and infrastructure governance practices.
-
+This section is being expanded with enterprise Windows Server architectures, Active Directory frameworks, hybrid identity integrations, PKI implementations, operational standards, security controls, and infrastructure governance practices.
