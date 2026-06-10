@@ -80,7 +80,7 @@ These reference designs provide visual guidance for planning, deploying, managin
 
 ### Enterprise Network Reference Architecture
 
-![Enterprise Architecture](enterprise-network-reference-architecture.png)
+![Enterprise Architecture](images/enterprise-network-reference-architecture.png)
 
 High-level enterprise architecture demonstrating relationships between networking, cloud, security, identity, endpoint management, and operational services.
 
@@ -88,7 +88,7 @@ High-level enterprise architecture demonstrating relationships between networkin
 
 ### BGP Dual ISP Architecture
 
-![BGP Dual ISP](bgp-dual-isp.png)
+![BGP Dual ISP](images/bgp-dual-isp.png)
 
 Enterprise WAN design supporting:
 
@@ -102,7 +102,7 @@ Enterprise WAN design supporting:
 
 ### Azure ExpressRoute Architecture
 
-![Azure ExpressRoute](bgp-expressroute-azure.png)
+![Azure ExpressRoute](images/bgp-expressroute-azure.png)
 
 Hybrid cloud architecture demonstrating:
 
@@ -115,7 +115,7 @@ Hybrid cloud architecture demonstrating:
 
 ### VLAN Reference Architecture
 
-![VLAN Architecture](vlan-reference-architecture.png)
+![VLAN Architecture](images/vlan-reference-architecture.png)
 
 Enterprise segmentation model supporting:
 
@@ -130,7 +130,7 @@ Enterprise segmentation model supporting:
 
 ### IP Addressing Framework
 
-![IP Addressing Framework](ip-addressing-framework.png)
+![IP Addressing Framework](images/ip-addressing-framework.png)
 
 Enterprise IP allocation framework demonstrating:
 
@@ -157,7 +157,7 @@ Wireless infrastructure architecture supporting:
 
 ### Entra ID Wireless Authentication
 
-![Wireless Authentication](wireless-entra-authentication.png)
+![Wireless Authentication](images/wireless-entra-authentication.png)
 
 Identity-driven wireless authentication architecture integrating:
 
