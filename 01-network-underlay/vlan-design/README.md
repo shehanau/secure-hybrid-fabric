@@ -1,15 +1,33 @@
-# VLAN Design
+# Enterprise VLAN Architecture
 
-![VLAN](https://img.shields.io/badge/VLAN-Segmentation-blue)
-![Network](https://img.shields.io/badge/Enterprise-Networking-blue)
+## Overview
 
-Enterprise VLAN standards and network segmentation examples.
+Logical segmentation strategy for enterprise environments.
 
-## Contents
+## Sample Segmentation
 
-* VLAN allocation standards
-* User and server segmentation
-* Voice VLAN design
-* Guest network isolation
-* CCTV and IoT networks
-* Sample switch configurations
+VLAN 10 - Corporate
+
+VLAN 20 - Voice
+
+VLAN 30 - Guest
+
+VLAN 40 - Servers
+
+VLAN 50 - Management
+
+VLAN 60 - CCTV
+
+## Security Benefits
+
+- Reduced broadcast domains
+- Improved segmentation
+- Easier firewall policy control
+
+## Design Standards
+
+Naming conventions
+
+IP ranges
+
+Documentation standards
