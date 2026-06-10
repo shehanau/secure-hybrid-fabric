@@ -17,11 +17,16 @@ This section contains reference architectures, design standards, implementation 
 The objective is to establish a consistent network framework that supports business growth, operational reliability, and future technology adoption.
 
 ---
-## Overview
+## Quick Navigation
 
-The Network Underlay provides the foundational connectivity layer supporting enterprise infrastructure, cloud integration, security services, and endpoint communications.
-
-This section contains reference architectures, design standards, implementation guidance, and operational practices used to build scalable, resilient, and secure network environments.
+| Domain                              | Description                                                                              |
+| ----------------------------------- | ---------------------------------------------------------------------------------------- |
+| [BGP Routing](./bgp)                | Enterprise routing architectures, ISP redundancy, Azure ExpressRoute, SD-WAN integration |
+| [VLAN Design](./vlan-design)        | Network segmentation, security zoning, enterprise switching standards                    |
+| [Wireless](./wireless)              | Enterprise wireless architecture, roaming, capacity planning                             |
+| [IP Addressing](./ip-addressing)    | Enterprise addressing frameworks, subnet allocation, summarisation                       |
+| [Network Standards](./standards)    | Naming conventions, configuration standards, governance                                  |
+| [Architecture Diagrams](./diagrams) | Reference architectures and enterprise design patterns                                   |
 
 ---
 
@@ -30,6 +35,7 @@ This section contains reference architectures, design standards, implementation 
 ![Enterprise Network Architecture](images/enterprise-network-reference-architecture.png)
 
 ---
+
 ## Architecture Scope
 
 The Network Underlay focuses on the core network services required to support enterprise operations:
