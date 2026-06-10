@@ -144,7 +144,7 @@ Enterprise IP allocation framework demonstrating:
 
 ### Enterprise Wireless Architecture
 
-![Wireless Architecture](wireless-reference-architecture.png)
+![Wireless Architecture](images/wireless-reference-architecture.png)
 
 Wireless infrastructure architecture supporting:
 
