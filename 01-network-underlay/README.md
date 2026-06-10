@@ -17,7 +17,19 @@ This section contains reference architectures, design standards, implementation 
 The objective is to establish a consistent network framework that supports business growth, operational reliability, and future technology adoption.
 
 ---
+## Overview
 
+The Network Underlay provides the foundational connectivity layer supporting enterprise infrastructure, cloud integration, security services, and endpoint communications.
+
+This section contains reference architectures, design standards, implementation guidance, and operational practices used to build scalable, resilient, and secure network environments.
+
+---
+
+## Enterprise Reference Architecture
+
+![Enterprise Network Architecture](images/enterprise-network-reference-architecture.png)
+
+---
 ## Architecture Scope
 
 The Network Underlay focuses on the core network services required to support enterprise operations:
