@@ -39,7 +39,7 @@ Key outcomes include:
 
 ## Architecture
 
-![Enterprise BGP Architecture](diagrams/bgp-dual-isp.png)
+![Enterprise BGP Architecture](images/bgp-dual-isp.png)
 
 ### Example Architecture Components
 
