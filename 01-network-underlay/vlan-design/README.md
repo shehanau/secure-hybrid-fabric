@@ -13,6 +13,17 @@ VLANs (Virtual Local Area Networks) provide logical segmentation within enterpri
 This section contains reference architectures, segmentation strategies, naming conventions, IP allocation models, and operational standards used within enterprise environments.
 
 ---
+## Overview
+
+VLANs (Virtual Local Area Networks) provide logical segmentation within enterprise networks, improving security, performance, scalability, and operational management.
+
+---
+
+## Reference Architecture
+
+![VLAN Reference Architecture](images/vlan-reference-architecture.png)
+
+---
 
 ## Business Objectives
 
