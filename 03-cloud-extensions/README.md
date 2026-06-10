@@ -20,19 +20,32 @@ Cloud Extensions expands traditional enterprise infrastructure into modern hybri
 This section contains reference architectures, governance standards, migration frameworks, implementation guidance, and operational practices supporting cloud adoption and hybrid infrastructure strategies.
 
 ---
-
 ## Quick Navigation
 
-| Domain          | Description                                           |
-| --------------- | ----------------------------------------------------- |
-| Azure           | Landing zones, networking, governance, cloud services |
-| Virtualisation  | VMware, Hyper-V, clustering, migration                |
-| Windows Server  | Active Directory, DNS, DHCP, server services          |
-| Linux Server    | Enterprise Linux administration and services          |
-| Hybrid Identity | Entra ID, Azure AD Connect, identity integration      |
-| Microsoft 365   | Productivity, security, compliance                    |
-| Terraform       | Infrastructure as Code and automation                 |
-| Diagrams        | Cloud and hybrid infrastructure architectures         |
+| Domain                               | Description                                                                       |
+| ------------------------------------ | --------------------------------------------------------------------------------- |
+| [Azure](./azure)                     | Cloud platform architecture, networking, governance, monitoring, and security     |
+| [Virtualisation](./virtualisation)   | VMware, Hyper-V, clustering, migration, and hybrid cloud integration              |
+| [Windows Server](./windows-server)   | Active Directory, DNS, DHCP, PKI, NPS, and enterprise infrastructure services     |
+| [Hybrid Identity](./hybrid-identity) | Entra ID, Active Directory, Conditional Access, MFA, and Zero Trust               |
+| [Microsoft 365](./microsoft-365)     | Exchange Online, Teams, SharePoint, Intune, and collaboration services            |
+| [Terraform](./terraform)             | Infrastructure as Code, automation, Azure deployments, and reusable modules       |
+| [Architecture Diagrams](./diagrams)  | Cloud, identity, virtualisation, Azure, and Microsoft 365 reference architectures |
+
+---
+
+## Architecture Diagram Library
+
+| Diagram                         | Description                                         |
+| ------------------------------- | --------------------------------------------------- |
+| Azure Reference Architecture    | Enterprise Azure platform design                    |
+| Azure Landing Zone Architecture | Governance and cloud foundation architecture        |
+| Azure VNet Architecture         | Enterprise networking and hybrid connectivity       |
+| Azure VM Architecture           | Terraform-based compute deployment                  |
+| Windows Server Architecture     | Core infrastructure services and hybrid integration |
+| Hybrid Identity Architecture    | Active Directory and Entra ID integration           |
+| Microsoft 365 Architecture      | Productivity, security, and collaboration services  |
+| Virtualisation Architecture     | VMware, Hyper-V, and hybrid cloud integration       |
 
 ---
 
