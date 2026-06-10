@@ -1,22 +1,53 @@
-# BGP Templates
+# Enterprise BGP Design
 
-![BGP](https://img.shields.io/badge/BGP-Routing-blue)
-![Cisco](https://img.shields.io/badge/Cisco-IOS-blue)
+## Overview
 
-Border Gateway Protocol (BGP) reference configurations and design templates.
+Border Gateway Protocol (BGP) provides scalable routing between autonomous systems and enables resilient WAN and cloud connectivity.
 
-## Contents
+## Business Objective
 
-* eBGP peering examples
-* ISP edge configurations
-* Route filtering policies
-* Prefix advertisements
-* Multi-homing designs
-* High availability routing
+Provide highly available connectivity between:
 
-## Platforms
+- Head Office
+- Branch Offices
+- Data Centres
+- Cloud Providers
 
-* Cisco IOS
-* Cisco IOS-XE
-* FortiGate
-* Juniper (planned)
+## Design Principles
+
+- Redundancy
+- Fast Convergence
+- Route Summarisation
+- Policy Based Routing
+- Scalability
+
+## Architecture
+
+(insert diagram)
+
+## Example Use Cases
+
+### ISP Redundancy
+
+Primary ISP
+Secondary ISP
+
+### SD-WAN Integration
+
+Dynamic route advertisement.
+
+### Cloud Connectivity
+
+Azure ExpressRoute
+
+## Validation
+
+- Route failover testing
+- Path selection verification
+- Route filtering validation
+
+## Lessons Learned
+
+- Keep route advertisements simple.
+- Use summarisation whenever possible.
+- Avoid unnecessary route redistribution.
